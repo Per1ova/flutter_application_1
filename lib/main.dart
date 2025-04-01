@@ -14,32 +14,31 @@ void main() {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // النص العلوي
+          
             Text(
               'Hello App Akademie!',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 20), // مسافة تحت النص
+            SizedBox(height: 20),
 
-            // المربعات مع الأزرار
             Row(
-              mainAxisAlignment: MainAxisAlignment.start, // تبدأ من اليسار
+              mainAxisAlignment: MainAxisAlignment.start, 
               children: [
                 buildColoredBox(Colors.red),
-                SizedBox(width: 10), // مسافة بين المربعات
+                SizedBox(width: 10), 
                 buildColoredBox(Colors.green),
                 SizedBox(width: 10),
                 buildColoredBox(Colors.blue),
               ],
             ),
-            SizedBox(height: 30), // مسافة بين المربعات والوجوه
+            SizedBox(height: 30), 
 
-            // الأيقونات في المنتصف
+           
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(Icons.emoji_emotions_outlined, size: 50, color: Colors.black),
-                SizedBox(width: 30), // مسافة بين الأيقونتين
+                SizedBox(width: 30), 
                 Icon(Icons.emoji_emotions_outlined, size: 50, color: Colors.black),
               ],
             ),
@@ -50,7 +49,7 @@ void main() {
   );
 }
 
-// دالة لإنشاء مربع ملون مع زر بنفسجي في المنتصف
+
 Widget buildColoredBox(Color color) {
   return Container(
     width: 70,
@@ -59,10 +58,10 @@ Widget buildColoredBox(Color color) {
     child: Center(
       child: ElevatedButton(
         onPressed: () {
-          print('تم الضغط على زر Abc');
+          print('null');
         },
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.purple, // لون الزر بنفسجي
+          backgroundColor: Colors.purple, 
           padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
           textStyle: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
         ),
